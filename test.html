@@ -1,114 +1,195 @@
 <!DOCTYPE html>
+<html lang="en" >
 <head>
-    <title>x</title>
-    
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<script src =  "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>    
-<script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<!-- 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"> -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<style>
-    .dropdown-hover:hover>.dropdown-menu {
-display: inline-block;
-}
-
-.dropdown-hover>.dropdown-toggle:active {
-/*Without this, clicking will make it sticky*/
-pointer-events: none;
-}
-.nav-items{
-    text-align:right;
-}
-</style>
+  <meta charset="UTF-8">
+  <title> Admin UI</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
 
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <!-- Container wrapper -->
-        <div class="container-fluid">
-          <!-- Toggle button -->
-          <button class="navbar-toggler px-0" type="button" data-mdb-toggle="collapse"
-            data-mdb-target="#navbarExampleOnHover" aria-controls="navbarExampleOnHover" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
-          </button>
-      
-          <!-- Collapsible wrapper -->
-          <div class="collapse navbar-collapse" id="navbarExampleOnHover">
-            <!-- Left links -->
-            <ul class="navbar-nav me-auto ps-lg-0" style="padding-left: 0.15rem">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Admin UI</a>
-              </li>
-              <!-- Navbar dropdown -->
-              <li class="nav-item dropdown dropdown-hover position-static">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                  data-mdb-toggle="dropdown" aria-expanded="false">
-                  Mega menu
-                </a>
-                <!-- Dropdown menu -->
-                <div class="dropdown-menu w-100 mt-0" aria-labelledby="navbarDropdown" style="border-top-left-radius: 0;
-                                  border-top-right-radius: 0;
-                                ">
-      
-                  <div class="container">
-                    <div class="row my-4">
-                      <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
-                        <div class="list-group list-group-flush">
-                          <a href="" class="list-group-item list-group-item-action">Lorem ipsum</a>
-                          <a href="" class="list-group-item list-group-item-action">Dolor sit</a>
-                          <a href="" class="list-group-item list-group-item-action">Amet consectetur</a>
-                          <a href="" class="list-group-item list-group-item-action">Cras justo odio</a>
-                          <a href="" class="list-group-item list-group-item-action">Adipisicing elit</a>
-                        </div>
-                      </div>
-                      <div class="col-md-6 col-lg-3 mb-3 mb-lg-0">
-                        <div class="list-group list-group-flush">
-                          <a href="" class="list-group-item list-group-item-action">Explicabo voluptas</a>
-                          <a href="" class="list-group-item list-group-item-action">Perspiciatis quo</a>
-                          <a href="" class="list-group-item list-group-item-action">Cras justo odio</a>
-                          <a href="" class="list-group-item list-group-item-action">Laudantium maiores</a>
-                          <a href="" class="list-group-item list-group-item-action">Provident dolor</a>
-                        </div>
-                      </div>
-                      <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
-                        <div class="list-group list-group-flush">
-                          <a href="" class="list-group-item list-group-item-action">Iste quaerato</a>
-                          <a href="" class="list-group-item list-group-item-action">Cras justo odio</a>
-                          <a href="" class="list-group-item list-group-item-action">Est iure</a>
-                          <a href="" class="list-group-item list-group-item-action">Praesentium</a>
-                          <a href="" class="list-group-item list-group-item-action">Laboriosam</a>
-                        </div>
-                      </div>
-                      <div class="col-md-6 col-lg-3">
-                        <div class="list-group list-group-flush">
-                          <a href="" class="list-group-item list-group-item-action">Cras justo odio</a>
-                          <a href="" class="list-group-item list-group-item-action">Saepe</a>
-                          <a href="" class="list-group-item list-group-item-action">Vel alias</a>
-                          <a href="" class="list-group-item list-group-item-action">Sunt doloribus</a>
-                          <a href="" class="list-group-item list-group-item-action">Cum dolores</a>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="nav-items">
-                    <a class="nav-link" href="#">Admin UI</a>
-                  </li>
-            </ul>
-            <!-- Left links -->
-          </div>
-          <!-- Collapsible wrapper -->
+<!-- partial:index.partial.html -->
+<header class="header_area">
+  <div class="main_header_area animated">
+    <div class="container">
+      <nav id="navigation1" class="navigation">
+        <div class="nav-header">
+          <a class="nav-brand" href="#">Admin UI</a>
+          <div class="nav-toggle"></div>
         </div>
-        <!-- Container wrapper -->
+        <!-- <div class="nav-search">
+          <div class="nav-search-button"><i class="nav-search-icon"></i></div>
+          <form>
+            <div class="nav-search-inner">
+              <input type="search" name="search" placeholder="Search..."/>
+            </div>
+          </form>
+        </div> -->
+        <div class="nav-menus-wrapper">
+          <ul class="nav-menu align-to-right">
+            <li><a href="#" target="_blank">Home</a></li>
+            <!-- <li>
+              <a href="#">Dropdown Menu</a>
+              <ul class="nav-dropdown"> -->
+                <!-- <li>
+                  <a href="#">Menu Level 2</a>
+                  <ul class="nav-dropdown">
+                    <li><a href="#" target="_blank">Link 1</a></li>
+                    <li><a href="#" target="_blank">Link 2</a></li>
+                    <li><a href="#" target="_blank">Link 3</a></li>
+                    <li><a href="#" target="_blank">Link 4</a></li>
+                    <li><a href="#" target="_blank">Link 5</a></li>
+                    <li><a href="#" target="_blank">Link 6</a></li>
+                    <li><a href="#" target="_blank">Link 7</a></li>
+                    <li><a href="#" target="_blank">Link 8</a></li>
+                    <li><a href="#" target="_blank">Link 9</a></li>
+                    <li><a href="#" target="_blank">Link 10</a></li>
+                  </ul>
+                </li> -->
+                <!-- <li>
+                  <a href="#">Menu Level 2</a>
+                  <ul class="nav-dropdown">
+                    <li>    
+                      <a href="#">Menu Level 3</a>
+                      <ul class="nav-dropdown">
+                        <li><a href="#" target="_blank">Link 1</a></li>
+                        <li><a href="#" target="_blank">Link 2</a></li>
+                        <li><a href="#" target="_blank">Link 3</a></li>
+                        <li><a href="#" target="_blank">Link 4</a></li>
+                        <li><a href="#" target="_blank">Link 5</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#" target="_blank">Link 1</a></li>
+                    <li><a href="#" target="_blank">Link 2</a></li>
+                    <li><a href="#" target="_blank">Link 3</a></li>
+                    <li><a href="#" target="_blank">Link 4</a></li>
+                    <li><a href="#" target="_blank">Link 5</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">Menu Level 2</a>
+                  <ul class="nav-dropdown">
+                    <li><a href="#" target="_blank">Link 1</a></li>
+                    <li><a href="#" target="_blank">Link 2</a></li>
+                    <li><a href="#" target="_blank">Link 3</a></li>
+                    <li><a href="#" target="_blank">Link 4</a></li>
+                    <li><a href="#" target="_blank">Link 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#" target="_blank">Link 1</a></li>
+                <li><a href="#" target="_blank">Link 2</a></li>
+                <li><a href="#" target="_blank">Link 3</a></li>
+                <li><a href="#" target="_blank">Link 4</a></li>
+                <li><a href="#" target="_blank">Link 5</a></li>
+              </ul>
+            </li> -->
+            <!-- <li>
+              <a href="#">Mega Menu</a>
+              <div class="megamenu-panel">
+                <div class="megamenu-lists">
+                  <ul class="megamenu-list list-col-4">
+                    <li><a href="#" target="_blank">Link 1</a></li>
+                    <li><a href="#" target="_blank">Link 2</a></li>
+                    <li><a href="#" target="_blank">Link 3</a></li>
+                    <li><a href="#" target="_blank">Link 4</a></li>
+                    <li><a href="#" target="_blank">Link 5</a></li>
+                    <li><a href="#" target="_blank">Link 6</a></li>
+                    <li><a href="#" target="_blank">Link 7</a></li>
+                    <li><a href="#" target="_blank">Link 8</a></li>
+                  </ul>
+                  <ul class="megamenu-list list-col-4">
+                    <li><a href="#" target="_blank">Link 1</a></li>
+                    <li><a href="#" target="_blank">Link 2</a></li>
+                    <li><a href="#" target="_blank">Link 3</a></li>
+                    <li><a href="#" target="_blank">Link 4</a></li>
+                    <li><a href="#" target="_blank">Link 5</a></li>
+                    <li><a href="#" target="_blank">Link 6</a></li>
+                    <li><a href="#" target="_blank">Link 7</a></li>
+                    <li><a href="#" target="_blank">Link 8</a></li>
+                  </ul>
+                  <ul class="megamenu-list list-col-4">
+                    <li><a href="#" target="_blank">Link 1</a></li>
+                    <li><a href="#" target="_blank">Link 2</a></li>
+                    <li><a href="#" target="_blank">Link 3</a></li>
+                    <li><a href="#" target="_blank">Link 4</a></li>
+                    <li><a href="#" target="_blank">Link 5</a></li>
+                    <li><a href="#" target="_blank">Link 6</a></li>
+                    <li><a href="#" target="_blank">Link 7</a></li>
+                    <li><a href="#" target="_blank">Link 8</a></li>
+                  </ul>
+                  <ul class="megamenu-list list-col-4">
+                    <li><a href="#" target="_blank">Link 1</a></li>
+                    <li><a href="#" target="_blank">Link 2</a></li>
+                    <li><a href="#" target="_blank">Link 3</a></li>
+                    <li><a href="#" target="_blank">Link 4</a></li>
+                    <li><a href="#" target="_blank">Link 5</a></li>
+                    <li><a href="#" target="_blank">Link 6</a></li>
+                    <li><a href="#" target="_blank">Link 7</a></li>
+                    <li><a href="#" target="_blank">Link 8</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li> -->
+            <li>
+              <a href="#">Mega Menu 2</a>
+              <div class="megamenu-panel">
+                <div class="megamenu-lists">
+                  <ul class="megamenu-list list-col-4">
+                    <li class="megamenu-list-title"><a href="#">Title Name</a></li>
+                    <li><a href="#" target="_blank">Link 1</a></li>
+                    <li><a href="#" target="_blank">Link 2</a></li>
+                    <li><a href="#" target="_blank">Link 3</a></li>
+                    <li><a href="#" target="_blank">Link 4</a></li>
+                    <li><a href="#" target="_blank">Link 5</a></li>
+                  </ul>
+                  <ul class="megamenu-list list-col-4">
+                    <li class="megamenu-list-title"><a href="#">Title Name</a></li>
+                    <li><a href="#" target="_blank">Link 1</a></li>
+                    <li><a href="#" target="_blank">Link 2</a></li>
+                    <li><a href="#" target="_blank">Link 3</a></li>
+                    <li><a href="#" target="_blank">Link 4</a></li>
+                    <li><a href="#" target="_blank">Link 5</a></li>
+                  </ul>
+                  <ul class="megamenu-list list-col-4">
+                    <li class="megamenu-list-title"><a href="#">Title Name</a></li>
+                    <li><a href="#" target="_blank">Link 1</a></li>
+                    <li><a href="#" target="_blank">Link 2</a></li>
+                    <li><a href="#" target="_blank">Link 3</a></li>
+                    <li><a href="#" target="_blank">Link 4</a></li>
+                    <li><a href="#" target="_blank">Link 5</a></li>
+                  </ul>
+                  <ul class="megamenu-list list-col-4">
+                    <li class="megamenu-list-title"><a href="#">Title Name</a></li>
+                    <li><a href="#" target="_blank">Link 1</a></li>
+                    <li><a href="#" target="_blank">Link 2</a></li>
+                    <li><a href="#" target="_blank">Link 3</a></li>
+                    <li><a href="#" target="_blank">Link 4</a></li>
+                    <li><a href="#" target="_blank">Link 5</a></li>
+                  </ul>
+
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#">Dropdown Menu</a>
+              <ul class="nav-dropdown"> -->
+               <li>
+                  <a href="#">Menu Level 2</a>
+                  <a href="#">Menu Level 2</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Logout</a>
+              </li>
+          </ul>
+        </div>
       </nav>
+    </div>
+  </div>
+</header>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'></script><script  src="./script.js"></script>
+
 </body>
 </html>
